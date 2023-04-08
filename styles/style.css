@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+header nav .logoSearch {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+@media screen and (max-width: 500px) {
+  header nav .logoSearch {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+}
+header nav .logoSearch .logoLink img {
+  width: 80px;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 500px) {
+  header nav .logoSearch .logoLink img {
+    width: 60px;
+  }
+}
+header nav .logoSearch .searchBox {
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 600px;
+  padding: 5px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px gray inset;
+  background: rgb(226, 226, 226);
+}
+@media screen and (max-width: 1100px) {
+  header nav .logoSearch .searchBox {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 990px) {
+  header nav .logoSearch .searchBox {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 450px) {
+  header nav .logoSearch .searchBox {
+    width: 220px;
+  }
+}
+@media screen and (max-width: 350px) {
+  header nav .logoSearch .searchBox {
+    width: 180px;
+  }
+}
+header nav .logoSearch .searchBox input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  background: transparent;
+}
+@media screen and (max-width: 450px) {
+  header nav .logoSearch .searchBox input {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 350px) {
+  header nav .logoSearch .searchBox input {
+    width: 50px;
+  }
+}
+header nav .logoSearch .searchBox button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+header nav .loginSec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+header nav .loginSec .navLink {
+  font-size: 14px;
+  padding: 5px 12px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+@media screen and (max-width: 770px) {
+  header nav .loginSec .navLink {
+    display: none;
+  }
+}
+header nav .loginSec .navLink.bor {
+  border: 1px solid grey;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px rgba(128, 128, 128, 0.699);
+  text-transform: uppercase;
+}
+header nav .loginSec .userLink {
+  display: none;
+}
+@media screen and (max-width: 770px) {
+  header nav .loginSec .userLink {
+    display: block;
+  }
+}
+header nav .loginSec .userLink img {
+  width: 30px;
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */

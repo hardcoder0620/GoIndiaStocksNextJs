@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+// header css here 
+header{
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        .logoSearch{
+            display: flex;
+            align-items: center;
+            justify-content:flex-start;
+            column-gap: 50px;
+            @media screen and (max-width:500px) {
+                column-gap: 10px;
+                
+            }
+            .logoLink{
+                img{
+                    width: 80px;
+                    transition: all .3s;
+                    @media screen and (max-width:500px) {
+                        width: 60px;
+
+                        
+                    }
+                }
+            }
+            .searchBox{
+                transition: all .3s;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 600px;
+                padding: 5px;
+                column-gap: 5px;
+                border-radius: 5px;
+                box-shadow: 0px 1px 3px gray inset;
+                background: rgb(226, 226, 226);
+                @media screen and (max-width:1100px) {
+                    width: 400px;
+                }
+                @media screen and (max-width:990px) {
+                    width: 300px;
+                }
+                @media screen and (max-width:450px) {
+                    width: 220px;
+                }
+                @media screen and (max-width:350px) {
+                    width: 180px;
+                }
+                input{
+                    flex:1 ;
+                    border: none;
+                    outline: none;
+                    padding-left: 10px;
+                    background: transparent;
+                    @media screen and (max-width:450px) {
+                        width: 120px;
+                    }
+                    @media screen and (max-width:350px) {
+                        width: 50px;
+                    }
+
+                }
+                button{
+                    border: none;
+                    outline: none;
+                    background: transparent;
+
+                }
+            }
+          
+        }
+        .loginSec{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
+            .navLink{
+                font-size: 14px;
+                padding: 5px 12px;
+                text-decoration: none;
+                color: black;
+                display: block;
+                @media screen and (max-width:770px) {
+                    display: none;
+                    
+                }
+                &.bor{
+                    border: 1px solid grey;
+                    border-radius: 3px;
+                    box-shadow: 0px 0px 2px rgba(128, 128, 128, 0.699);
+                    text-transform: uppercase;
+                }
+
+
+            }
+            .userLink{
+                display: none;
+                @media screen and (max-width:770px) {
+                    display: block;
+                    
+                }
+                img{
+                    width: 30px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+
+    }
+
+}
