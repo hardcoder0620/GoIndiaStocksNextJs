@@ -32,6 +32,110 @@ export default function Header() {
                     </Link>
                 </div>
             </nav>
+            <div className="bottomNav">
+                <div className="elem">
+                    50
+                </div>
+                <div className="elem red">
+                    0.21%
+                </div>
+                <div className="elem ">
+                    NFTYBank
+                </div>
+                <div className="elem ">
+                    41.570
+                </div>
+                <div className="elem green">
+                    0.01%
+                </div>
+                <div className="elem ">
+                    1.570
+                </div>
+                <div className="elem red">
+                    0.01%
+                </div>
+                <div className="elem ">
+                    BHARTIRTIL
+                </div>
+                <div className="elem ">
+                   771.95
+                </div>
+                <div className="elem green">
+                    0.69%
+                </div>
+                <div className="elem ">
+                   HDFCBANK
+                </div>
+                <div className="elem ">
+                   1657.19
+                </div>
+                <div className="elem ">
+                    NFTYBank
+                </div>
+                <div className="elem ">
+                    41.570
+                </div>
+                <div className="elem green">
+                    0.01%
+                </div>
+                <div className="elem ">
+                    1.570
+                </div>
+                <div className="elem red">
+                    0.01%
+                </div>
+                <div className="elem ">
+                   771.95
+                </div>
+                <div className="elem green">
+                    0.69%
+                </div>
+                <div className="elem ">
+                   HDFCBANK
+                </div>
+                <div className="elem ">
+                   1657.19
+                </div>
+                <div className="elem ">
+                    NFTYBank
+                </div>
+                <div className="elem ">
+                    1.570
+                </div>
+                <div className="elem red">
+                    0.01%
+                </div>
+                <div className="elem ">
+                   771.95
+                </div>
+                <div className="elem green">
+                    0.69%
+                </div>
+                <div className="elem green">
+                    0.69%
+                </div>
+                <div className="elem ">
+                   HDFCBANK
+                </div>
+                <div className="elem ">
+                   1657.19
+                </div>
+                <div className="elem ">
+                    NFTYBank
+                </div>
+                <div className="elem ">
+                    1.570
+                </div>
+                <div className="elem red">
+                    0.01%
+                </div>
+                <div className="elem ">
+                   771.95
+                </div>
+                <div className="elem green">
+                    0.69%
+                </div>
+            </div>
         </header>
     )
 }
