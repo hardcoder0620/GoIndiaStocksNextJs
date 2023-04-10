@@ -529,6 +529,12 @@ header .bottomNav .elem.green {
   padding-right: 60px;
   position: relative;
 }
+@media screen and (max-width: 500px) {
+  .fourmSectionMain .discussionMain .filtersSec .posts .post .content {
+    padding-right: 10px;
+    padding-left: 50px;
+  }
+}
 .fourmSectionMain .discussionMain .filtersSec .posts .post .content .name {
   font-size: 16px;
   font-weight: 500;
@@ -566,6 +572,11 @@ header .bottomNav .elem.green {
   left: 20px;
   top: 0px;
   width: 30px;
+}
+@media screen and (max-width: 500px) {
+  .fourmSectionMain .discussionMain .filtersSec .posts .post .content .userImg {
+    left: 10px;
+  }
 }
 .fourmSectionMain .storiesSec {
   padding: 15px 5px 0px;

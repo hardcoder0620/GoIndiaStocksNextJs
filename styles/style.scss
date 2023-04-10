@@ -581,6 +581,11 @@ header {
                         padding-right: 60px;
 
                         position: relative;
+                        @media screen and (max-width:500px) {
+                            padding-right: 10px;
+                            padding-left: 50px;
+                            
+                        }
 
                         .name {
                             font-size: 16px;
@@ -624,6 +629,10 @@ header {
                             left: 20px;
                             top: 0px;
                             width: 30px;
+                            @media screen and (max-width:500px) {
+                               left: 10px;
+                                
+                            }
 
                         }
                     }
