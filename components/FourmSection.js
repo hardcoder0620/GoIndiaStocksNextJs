@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BiSearch } from 'react-icons/bi'
 import { AiOutlineHeart, AiOutlineEye, AiOutlineComment, AiOutlineShareAlt } from 'react-icons/ai'
 import { useSelector, useDispatch } from 'react-redux';
@@ -7,12 +7,28 @@ import { changeState } from '@/store/slices/sidedSlice';
 export default function FourmSection() {
 
     const sidebarState = useSelector((state) => state.sidebarReducer)
+    const [mobileTab,setMobileTab]=useState('left')
+
+    function setTabFn(opt){
+        setMobileTab(opt)
+    }
 
     return (
+        // mobile tabs 
+        <>
+        <div className="mobileTabs">
+            <div className={` left ${mobileTab == "left" ? "active" : ""}`} onClick={()=>{setTabFn('left')}}>
+                Disscusion Fourm
+            </div>
+            <div className={` right ${mobileTab == "right" ? "active" : ""}`} onClick={()=>{setTabFn('right')}}>
+                Market Stories
+            </div>
+        </div>
+        
         <div className={`fourmSectionMain ${sidebarState ? "" : "expanded"}`} >
             <div className="container-fluid">
                 <div className="row">
-                    <div className={` tra ${sidebarState ? "col-lg-8 col-md-8 col-sm-8" : "col-lg-6 col-md-8 col-sm-8"}`}>
+                    <div className={` tra ${sidebarState ? "col-lg-8 col-md-8 col-sm-8" : "col-lg-6 col-md-8 col-sm-8"} ${mobileTab == 'left' ? "" : "mobileHide" } `}>
                         <div className="discussionMain">
                             <div className="heading">
                                 Disscussion fourm
@@ -223,7 +239,7 @@ export default function FourmSection() {
                             </div>
                         </div>
                     </div>
-                    <div className={ ` tra ${sidebarState ? "col-lg-4 col-md-4 col-sm-4" : "col-lg-6 col-md-4 col-sm-4"}`}>
+                    <div className={ ` tra ${sidebarState ? "col-lg-4 col-md-4 col-sm-4" : "col-lg-6 col-md-4 col-sm-4"} ${mobileTab == 'right' ? "" : "mobileHide" } `}>
                         <div className="storiesSec">
                             <div className="heading">
                                 Market Stories
@@ -289,5 +305,6 @@ export default function FourmSection() {
             </div>
 
         </div>
+        </>
     )
 }

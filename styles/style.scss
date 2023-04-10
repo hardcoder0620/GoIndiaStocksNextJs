@@ -13,8 +13,14 @@ body {
 
 }
 
-.tra{
+.tra {
     transition: all .4s;
+}
+
+.mobileHide {
+    @media screen and (max-width:570px) {
+        display: none;
+    }
 }
 
 
@@ -223,6 +229,47 @@ header {
     }
 }
 
+.mobileTabs {
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    @media screen and (max-width:570px) {
+        display: flex;
+        
+    }
+
+    .left{
+        text-align: center;
+        padding: 6px;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        background: #1d3b61;
+        flex: 1;
+        border-bottom: 3px solid #1d3b61;
+        transition: all .3s;
+        &.active{
+            border-bottom: 3px solid rgb(194, 66, 66);
+            
+        }
+    }
+    .right{
+        transition: all .3s;
+        text-align: center;
+        padding: 6px;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        background: #1d3b61;
+        flex: 1;
+        border-bottom: 3px solid #1d3b61;
+        &.active{
+            border-bottom: 3px solid rgb(194, 66, 66);
+
+        }
+    }
+}
+
 // sidebarMain
 .sidebarMain {
     background: #1d3b61;
@@ -234,10 +281,17 @@ header {
     bottom: 0px;
     transform: translateX(0%);
     transition: all .4s;
+
     @media screen and (max-width:1100px) {
         width: 250px;
     }
- 
+    @media screen and (max-width:570px) {
+     top: 104px;
+    }
+    @media screen and (max-width:500px) {
+     top: 90px;
+    }
+
 
     &.closed {
         transform: translateX(-100%);
@@ -348,13 +402,16 @@ header {
     padding-left: 300px;
     overflow-x: hidden;
     transition: all .4s;
+
     @media screen and (max-width:1100px) {
         padding-left: 250px;
     }
+
     @media screen and (max-width:1024px) {
         padding-left: 0px;
     }
-    &.expanded{
+
+    &.expanded {
         padding-left: 0px;
     }
 
@@ -366,13 +423,18 @@ header {
             font-size: 18px;
             font-weight: 500;
             text-transform: uppercase;
+            @media screen and (max-width:570px) {
+                font-size: 16px;
+            }
         }
 
         .filtersSec {
             padding: 0px 40px 0px 50px;
+
             @media screen and (max-width:1200px) {
                 padding: 0px 30px 0px 30px;
             }
+
             @media screen and (max-width:770px) {
                 padding: 0px 0px 0px 0px;
             }
@@ -394,12 +456,13 @@ header {
                 align-items: center;
                 justify-content: flex-start;
                 column-gap: 10px;
+
                 @media screen and (max-width:1024px) {
                     column-gap: 5px;
-                    
+
                 }
-               
-             
+
+
 
                 .secItem {
                     background: red;
@@ -407,11 +470,14 @@ header {
                     padding: 3px 10px;
                     font-size: 13px;
                     color: white;
+                    text-align: center;
+
                     @media screen and (max-width:770px) {
-                       font-size: 10px;
-                        
+                        font-size: 10px;
+
                     }
-              
+                  
+
                 }
 
                 .sBox {
@@ -431,17 +497,25 @@ header {
                         background: transparent;
                         border: none;
                         font-size: 14px;
+
                         @media screen and (max-width:1200px) {
                             width: 100px;
-                            
+
                         }
+
                         @media screen and (max-width:770px) {
-                            width:70px;
-                            
+                            width: 70px;
+
                         }
+
                         @media screen and (max-width:570px) {
-                            width:100px;
-                            
+                            width: 100px;
+                        }
+                        @media screen and (max-width:500px) {
+                            width: 70px;
+                        }
+                        @media screen and (max-width:365px) {
+                            width: 60px;
                         }
 
                         &::placeholder {
@@ -460,7 +534,12 @@ header {
                 height: calc(100vh - 375px);
                 overflow-y: scroll;
 
-               
+                @media screen and (max-width:570px) {
+
+                    height: calc(100vh - 410px); 
+                }
+
+
 
                 &::-webkit-scrollbar {
                     width: 10px;
@@ -553,31 +632,45 @@ header {
             }
         }
     }
-    .storiesSec{
+
+    .storiesSec {
         padding: 15px 5px 0px;
-        .heading{
+
+        .heading {
             font-size: 18px;
             text-transform: uppercase;
             color: rgb(248, 80, 80);
             font-weight: 500;
+            @media screen and (max-width:570px) {
+                font-size: 16px;
+            }
         }
-        .marketCards{
+
+        .marketCards {
             height: calc(100vh - 300px);
             overflow-y: scroll;
             margin-top: 35px;
             padding-right: 30px;
+
             @media screen and (max-width:770px) {
                 padding-right: 0px;
-                
+
             }
-            &::-webkit-scrollbar{
+
+            @media screen and (max-width:570px) {
+                height: calc(100vh - 320px);
+            }
+
+            &::-webkit-scrollbar {
                 display: none;
             }
-            .marketCard{
+
+            .marketCard {
                 border-radius: 10px;
                 position: relative;
                 overflow: hidden;
-                .over{
+
+                .over {
                     position: absolute;
                     bottom: 0px;
                     left: 0px;
@@ -587,7 +680,8 @@ header {
                     color: white;
                     font-size: 14px;
                     padding: 20px 20px 15px;
-                    @media screen  and (max-width:770px){
+
+                    @media screen and (max-width:770px) {
                         padding: 10px 10px 10px;
                     }
                 }
