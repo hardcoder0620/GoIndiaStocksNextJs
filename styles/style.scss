@@ -658,6 +658,10 @@ header {
 
                                 .text {
                                     font-size: 12px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-start;
+                                    column-gap: 5px;
                                 }
                             }
                         }

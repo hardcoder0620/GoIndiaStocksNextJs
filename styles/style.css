@@ -609,6 +609,11 @@ header .plusBtn {
 }
 .fourmSectionMain .discussionMain .filtersSec .posts .post .content .likeShare .like .text {
   font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
 }
 .fourmSectionMain .discussionMain .filtersSec .posts .post .content .userImg {
   position: absolute;
