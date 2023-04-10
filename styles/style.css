@@ -168,6 +168,28 @@ header .bottomNav .elem.red {
 header .bottomNav .elem.green {
   color: rgb(60, 187, 60);
 }
+header .plusBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #1d3b61;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  z-index: 10;
+}
+@media screen and (max-width: 570px) {
+  header .plusBtn {
+    height: 40px;
+    width: 40px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
 
 .featuredComMain .heading {
   font-size: 18px;
@@ -423,12 +445,18 @@ header .bottomNav .elem.green {
   }
 }
 .fourmSectionMain .discussionMain .filtersSec .searchSec .secItem {
-  background: red;
+  background: rgb(175, 39, 30);
   border-radius: 50px;
   padding: 3px 10px;
   font-size: 13px;
   color: white;
   text-align: center;
+}
+.fourmSectionMain .discussionMain .filtersSec .searchSec .secItem.blue {
+  background: rgb(35, 89, 162);
+}
+.fourmSectionMain .discussionMain .filtersSec .searchSec .secItem.yellow {
+  background: rgb(236, 202, 91);
 }
 @media screen and (max-width: 770px) {
   .fourmSectionMain .discussionMain .filtersSec .searchSec .secItem {
@@ -470,11 +498,12 @@ header .bottomNav .elem.green {
 @media screen and (max-width: 500px) {
   .fourmSectionMain .discussionMain .filtersSec .searchSec .sBox input {
     width: 70px;
+    font-size: 12px;
   }
 }
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 375px) {
   .fourmSectionMain .discussionMain .filtersSec .searchSec .sBox input {
-    width: 60px;
+    width: 50px;
   }
 }
 .fourmSectionMain .discussionMain .filtersSec .searchSec .sBox input::-moz-placeholder {
@@ -484,6 +513,14 @@ header .bottomNav .elem.green {
 .fourmSectionMain .discussionMain .filtersSec .searchSec .sBox input::placeholder {
   font-size: 14px;
   text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .fourmSectionMain .discussionMain .filtersSec .searchSec .sBox input::-moz-placeholder {
+    font-size: 12px;
+  }
+  .fourmSectionMain .discussionMain .filtersSec .searchSec .sBox input::placeholder {
+    font-size: 12px;
+  }
 }
 .fourmSectionMain .discussionMain .filtersSec .posts {
   margin-top: 20px;
@@ -540,12 +577,18 @@ header .bottomNav .elem.green {
   font-weight: 500;
 }
 .fourmSectionMain .discussionMain .filtersSec .posts .post .content .name span {
-  background: red;
+  background: rgb(175, 39, 30);
   border-radius: 40px;
   font-size: 12px;
   color: white;
   padding: 2px 8px;
   margin-left: 20px;
+}
+.fourmSectionMain .discussionMain .filtersSec .posts .post .content .name span.blue {
+  background: rgb(35, 89, 162);
+}
+.fourmSectionMain .discussionMain .filtersSec .posts .post .content .name span.yellow {
+  background: rgb(236, 202, 91);
 }
 .fourmSectionMain .discussionMain .filtersSec .posts .post .content .desc {
   margin-top: 20px;

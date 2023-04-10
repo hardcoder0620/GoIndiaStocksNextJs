@@ -41,10 +41,10 @@ export default function FourmSection() {
                                     <div className="secItem">
                                         Section 1
                                     </div>
-                                    <div className="secItem">
+                                    <div className="secItem blue">
                                         Section 2
                                     </div>
-                                    <div className="secItem">
+                                    <div className="secItem yellow">
                                         Section 3
                                     </div>
                                     <div className="sBox">
@@ -78,7 +78,9 @@ export default function FourmSection() {
                                                 <div className="like">
                                                     <AiOutlineComment size={18} />
                                                     <div className="text">
-                                                        2k Comments
+                                                        2k <span className="d-none d-sm-block">
+                                                             Comments
+                                                            </span>
                                                     </div>
                                                 </div>
                                                 <div className="like">
@@ -94,7 +96,7 @@ export default function FourmSection() {
                                     <div className="post">
 
                                         <div className="content">
-                                            <div className="name">Lorem Ipsum <span className="red">Section1</span></div>
+                                            <div className="name">Lorem Ipsum <span className="blue">Section2</span></div>
                                             <div className="desc">
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque nostrum placeat, adipisci explicabo dolores aliquam.
                                             </div>
@@ -114,7 +116,9 @@ export default function FourmSection() {
                                                 <div className="like">
                                                     <AiOutlineComment size={18} />
                                                     <div className="text">
-                                                        2k Comments
+                                                        2k <span className="d-none d-sm-block">
+                                                             Comments
+                                                            </span>
                                                     </div>
                                                 </div>
                                                 <div className="like">
@@ -130,7 +134,7 @@ export default function FourmSection() {
                                     <div className="post">
 
                                         <div className="content">
-                                            <div className="name">Lorem Ipsum <span className="red">Section1</span></div>
+                                            <div className="name">Lorem Ipsum <span className="yellow">Section3</span></div>
                                             <div className="desc">
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque nostrum placeat, adipisci explicabo dolores aliquam.
                                             </div>
@@ -150,7 +154,9 @@ export default function FourmSection() {
                                                 <div className="like">
                                                     <AiOutlineComment size={18} />
                                                     <div className="text">
-                                                        2k Comments
+                                                        2k <span className="d-none d-sm-block">
+                                                             Comments
+                                                            </span>
                                                     </div>
                                                 </div>
                                                 <div className="like">
@@ -166,7 +172,7 @@ export default function FourmSection() {
                                     <div className="post">
 
                                         <div className="content">
-                                            <div className="name">Lorem Ipsum <span className="red">Section1</span></div>
+                                            <div className="name">Lorem Ipsum <span className="red">Section4</span></div>
                                             <div className="desc">
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque nostrum placeat, adipisci explicabo dolores aliquam.
                                             </div>
@@ -186,7 +192,9 @@ export default function FourmSection() {
                                                 <div className="like">
                                                     <AiOutlineComment size={18} />
                                                     <div className="text">
-                                                        2k Comments
+                                                        2k <span className="d-none d-sm-block">
+                                                             Comments
+                                                            </span>
                                                     </div>
                                                 </div>
                                                 <div className="like">
@@ -202,7 +210,7 @@ export default function FourmSection() {
                                     <div className="post">
 
                                         <div className="content">
-                                            <div className="name">Lorem Ipsum <span className="red">Section1</span></div>
+                                            <div className="name">Lorem Ipsum <span className="blue">Section5</span></div>
                                             <div className="desc">
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque nostrum placeat, adipisci explicabo dolores aliquam.
                                             </div>
@@ -222,7 +230,9 @@ export default function FourmSection() {
                                                 <div className="like">
                                                     <AiOutlineComment size={18} />
                                                     <div className="text">
-                                                        2k Comments
+                                                        2k <span className="d-none d-sm-block">
+                                                             Comments
+                                                            </span>
                                                     </div>
                                                 </div>
                                                 <div className="like">

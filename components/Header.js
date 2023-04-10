@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 import { BiSearch } from "react-icons/bi";
+import {AiOutlinePlus} from "react-icons/ai"
 
 export default function Header() {
     return (
@@ -136,6 +137,9 @@ export default function Header() {
                     0.69%
                 </div>
             </div>
+            <button className="plusBtn">
+                <AiOutlinePlus size={22} color='white'/>
+            </button>
         </header>
     )
 }
